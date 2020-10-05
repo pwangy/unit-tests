@@ -1,3 +1,4 @@
 export const hashtags = (text) => {
-  return text
+  const hashFilter = /\u{23}\w+/gu
+  return text.match(hashFilter)
 }
